@@ -37,6 +37,7 @@
   "canonical_paths": {
     "scenes": "content/scene-plan.json",
     "page_map": "production/page-map.json",
+    "assets": "assets/candidate-assets.json",
     "tracker": "tracker/TASKS.md",
     "metadata": "metadata/KDP.md",
     "qa": "qa/CHECKLIST.md"
