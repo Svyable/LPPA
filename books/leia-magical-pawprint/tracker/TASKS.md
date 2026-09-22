@@ -11,9 +11,9 @@ This is the canonical Book 1 work ledger. Status values: `Not Started`, `In Prog
 | D05 | Decisions | Use KDP free ISBN | Both | Complete | High | — |
 | D06 | Decisions | Use Princess Puppy Adventures as series/brand | Both | Complete | High | D05 |
 | C01 | Content | Approve 19-scene coloring list | Chelsea | Ready for Review | Critical | D04 |
-| C02 | Content | Write final Meet Leia intro | Chelsea | Not Started | High | D01,D02 |
-| C03 | Content | Write copyright + credits page | Chelsea | Not Started | High | D03,D05 |
-| C04 | Content | Write closing / next-adventure copy | Chelsea | Not Started | Medium | D06 |
+| C02 | Content | Write final Meet Leia intro | Chelsea | Ready for Review | High | D01,D02 |
+| C03 | Content | Write copyright + credits page | Chelsea | Ready for Review | High | D03,D05 |
+| C04 | Content | Write closing / next-adventure copy | Chelsea | Ready for Review | Medium | D06 |
 | A01 | Artwork | Inventory existing Leia art and map keepers/gaps to scenes | Sven | In Progress | Critical | C01 |
 | A02 | Artwork | Create definitive Leia character consistency sheet | Sven | Not Started | Critical | A01 |
 | A03 | Artwork | Rebuild/redraw keeper art at genuine print quality | Sven | Not Started | Critical | A02 |
@@ -51,4 +51,4 @@ This is the canonical Book 1 work ledger. Status values: `Not Started`, `In Prog
 
 C01 → A01 → A02 → A03 → A04/A05 → P01 → P04/P05 → K01/K02 → metadata/upload/Previewer → proof → publish.
 
-The scene plan is now drafted, so C01 is **Ready for Review**, not complete.
+C01 remains **Ready for Review**. C02–C04 now have complete draft copy in `content/FRONT-BACK-MATTER.md` and are **Ready for Review**, not complete; Chelsea-owned copy requires approval before final production.
