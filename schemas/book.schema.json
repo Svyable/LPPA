@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svyable.github.io/LPPA/schemas/book.schema.json",
+  "title": "Princess Puppy Adventures book manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "slug",
+    "series_slug",
+    "series_number",
+    "title",
+    "contributors",
+    "status",
+    "format",
+    "kdp",
+    "canonical_paths"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "series_slug": {
+      "const": "princess-puppy-adventures"
+    },
+    "series_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "contributors": {
+      "type": "object",
+      "required": [
+        "author",
+        "illustrator"
+      ],
+      "properties": {
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "illustrator": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "status": {
+      "enum": [
+        "concept",
+        "production",
+        "proof",
+        "ready-to-publish",
+        "published",
+        "archived"
+      ]
+    },
+    "format": {
+      "type": "object",
+      "required": [
+        "binding",
+        "trim_inches",
+        "interior",
+        "paper",
+        "page_count",
+        "bleed",
+        "spine_text"
+      ],
+      "properties": {
+        "binding": {
+          "type": "string"
+        },
+        "trim_inches": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "interior": {
+          "type": "string"
+        },
+        "paper": {
+          "type": "string"
+        },
+        "page_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bleed": {
+          "type": "boolean"
+        },
+        "cover_finish": {
+          "type": "string"
+        },
+        "spine_text": {
+          "type": "boolean"
+        }
+      }
+    },
+    "kdp": {
+      "type": "object",
+      "required": [
+        "isbn_strategy",
+        "low_content",
+        "physical_proof_required"
+      ]
+    },
+    "canonical_paths": {
+      "type": "object",
+      "required": [
+        "scenes",
+        "page_map",
+        "tracker",
+        "metadata",
+        "qa"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

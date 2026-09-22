@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svyable.github.io/LPPA/schemas/scene-plan.schema.json",
+  "title": "Coloring scene plan",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "book_slug",
+    "status",
+    "scenes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "book_slug": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "page",
+          "title",
+          "story_beat",
+          "coloring_composition",
+          "art_status",
+          "approval"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "story_beat": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coloring_composition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "art_status": {
+            "type": "string"
+          },
+          "approval": {
+            "enum": [
+              "review",
+              "approved",
+              "revise",
+              "cut"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
