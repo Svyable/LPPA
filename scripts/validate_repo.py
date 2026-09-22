@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ERRORS: list[str] = []
 
+
 def load_json(path: Path):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -17,9 +18,11 @@ def load_json(path: Path):
         ERRORS.append(f"{path.relative_to(ROOT)}: invalid JSON: {exc}")
         return None
 
+
 def require(condition: bool, message: str):
     if not condition:
         ERRORS.append(message)
+
 
 index = load_json(ROOT / "books" / "index.json")
 if isinstance(index, dict):
@@ -45,7 +48,7 @@ if isinstance(index, dict):
         if not isinstance(book, dict):
             continue
         require(book.get("slug") == slug, f"{slug}: manifest slug mismatch")
-        for key in ("title","contributors","format","kdp","canonical_paths"):
+        for key in ("title", "contributors", "format", "kdp", "canonical_paths"):
             require(key in book, f"{slug}: missing {key} in book.json")
         contributors = book.get("contributors", {})
         require(bool(contributors.get("author")), f"{slug}: missing author")
@@ -61,14 +64,53 @@ if isinstance(index, dict):
 
         scene_path = manifest_path.parent / book.get("canonical_paths", {}).get("scenes", "")
         page_path = manifest_path.parent / book.get("canonical_paths", {}).get("page_map", "")
+        assets_rel = book.get("canonical_paths", {}).get("assets")
+        assets_path = manifest_path.parent / assets_rel if assets_rel else None
         scenes = load_json(scene_path) if scene_path.is_file() else None
         page_map = load_json(page_path) if page_path.is_file() else None
+        assets = load_json(assets_path) if assets_path and assets_path.is_file() else None
 
         if isinstance(page_map, dict) and isinstance(pages, int) and pages:
             mapped = page_map.get("pages", [])
             nums = [p.get("page") for p in mapped if isinstance(p, dict)]
             require(len(mapped) == pages, f"{slug}: page map has {len(mapped)} entries, expected {pages}")
             require(nums == list(range(1, pages + 1)), f"{slug}: page map must cover pages 1..{pages} exactly")
+
+        # Asset-ingestion invariants are generic across books. A manifest may truthfully
+        # record a missing legacy binary, but it may not claim an imported binary without
+        # a repository path that actually exists. Scene affinities must also point to real
+        # scene numbers so asset mapping cannot silently drift from the scene plan.
+        if isinstance(assets, dict):
+            candidates = assets.get("candidates", [])
+            require(isinstance(candidates, list), f"{slug}: assets candidates must be a list")
+            candidate_ids = [c.get("id") for c in candidates if isinstance(c, dict)]
+            require(len(candidate_ids) == len(set(candidate_ids)), f"{slug}: duplicate candidate asset id")
+            scene_count = len(scenes.get("scenes", [])) if isinstance(scenes, dict) else 0
+            for candidate in candidates:
+                if not isinstance(candidate, dict):
+                    ERRORS.append(f"{slug}: every candidate asset must be an object")
+                    continue
+                asset_id = candidate.get("id") or "<missing-id>"
+                require(bool(candidate.get("id")), f"{slug}: candidate asset missing id")
+                require(bool(candidate.get("original_filename")), f"{slug}/{asset_id}: missing original_filename")
+                state = candidate.get("binary_state")
+                repo_rel = candidate.get("repository_path")
+                require(state in {"missing", "imported"}, f"{slug}/{asset_id}: binary_state must be missing or imported")
+                if state == "missing":
+                    require(repo_rel is None, f"{slug}/{asset_id}: missing binary must not claim repository_path")
+                elif state == "imported":
+                    require(isinstance(repo_rel, str) and bool(repo_rel), f"{slug}/{asset_id}: imported binary needs repository_path")
+                    if isinstance(repo_rel, str) and repo_rel:
+                        repo_asset = manifest_path.parent / repo_rel
+                        require(repo_asset.is_file(), f"{slug}/{asset_id}: imported binary not found at {repo_asset.relative_to(ROOT)}")
+                affinities = candidate.get("scene_affinity", [])
+                require(isinstance(affinities, list), f"{slug}/{asset_id}: scene_affinity must be a list")
+                if isinstance(affinities, list) and scene_count:
+                    for scene_number in affinities:
+                        require(
+                            isinstance(scene_number, int) and 1 <= scene_number <= scene_count,
+                            f"{slug}/{asset_id}: invalid scene_affinity {scene_number!r}; expected 1..{scene_count}",
+                        )
 
         if slug == "leia-magical-pawprint" and isinstance(scenes, dict):
             scene_list = scenes.get("scenes", [])
