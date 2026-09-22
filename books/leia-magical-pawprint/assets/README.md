@@ -2,6 +2,8 @@
 
 All book-specific Leia artwork belongs here. Reusable Leia character references belong in `series/characters/leia/`.
 
+The canonical candidate-to-scene working audit is [ASSET-AUDIT.md](./ASSET-AUDIT.md). Update that audit when binaries are imported, inspected, mapped, promoted, rejected, or found unavailable.
+
 Recommended subdirectories as assets are added:
 
 - `candidates/` — exploratory or imported existing work
