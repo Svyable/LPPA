@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svyable.github.io/LPPA/schemas/candidate-assets.schema.json",
+  "title": "Book candidate asset inventory",
+  "type": "object",
+  "required": ["schema_version", "book_slug", "status", "candidates"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "book_slug": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "minLength": 1},
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "original_filename", "repository_path", "classification", "binary_state", "scene_affinity", "requires_rebuild_if_retained"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "original_filename": {"type": "string", "minLength": 1},
+          "repository_path": {"type": ["string", "null"]},
+          "known_dimensions_px": {
+            "oneOf": [
+              {"type": "null"},
+              {"type": "array", "prefixItems": [{"type": "integer", "minimum": 1}, {"type": "integer", "minimum": 1}], "minItems": 2, "maxItems": 2}
+            ]
+          },
+          "classification": {"enum": ["candidate", "reject", "reference-only", "keeper-source", "print", "released"]},
+          "binary_state": {"enum": ["missing", "imported", "unavailable"]},
+          "scene_affinity": {"type": "array", "items": {"type": "integer", "minimum": 1}},
+          "possible_role": {"type": "string"},
+          "requires_rebuild_if_retained": {"type": ["boolean", "null"]}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

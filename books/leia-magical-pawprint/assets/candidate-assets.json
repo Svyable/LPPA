@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "book_slug": "leia-magical-pawprint",
+  "status": "awaiting-binary-import",
+  "candidates": [
+    {
+      "id": "cover-concept",
+      "original_filename": "Leia the Princess Puppy Cover.png",
+      "repository_path": null,
+      "known_dimensions_px": [1448, 1086],
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [],
+      "possible_role": "cover-concept-character-reference",
+      "requires_rebuild_if_retained": true
+    },
+    {
+      "id": "magical-pawprints-concept",
+      "original_filename": "Leia the Princess Puppy: Magical Pawprints.png",
+      "repository_path": null,
+      "known_dimensions_px": [1774, 887],
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [],
+      "possible_role": "narrative-scene-reference",
+      "requires_rebuild_if_retained": true
+    },
+    {
+      "id": "braver-day-adventure",
+      "original_filename": "Leia’s Braver Day Adventure.png",
+      "repository_path": null,
+      "known_dimensions_px": [1208, 1302],
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [5, 10],
+      "possible_role": "courage-adventure-reference",
+      "requires_rebuild_if_retained": true
+    },
+    {
+      "id": "image-gen-4-1",
+      "original_filename": "image-gen-4(1).png",
+      "repository_path": null,
+      "known_dimensions_px": [1104, 1425],
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [],
+      "possible_role": "interior-art-candidate",
+      "requires_rebuild_if_retained": true
+    },
+    {
+      "id": "image-gen-3-1",
+      "original_filename": "image-gen-3(1).png",
+      "repository_path": null,
+      "known_dimensions_px": [1104, 1425],
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [],
+      "possible_role": "interior-art-candidate",
+      "requires_rebuild_if_retained": true
+    },
+    {
+      "id": "leia-magical-pawprint-apostrophe",
+      "original_filename": "Leia the Princess Puppy’s Magical Pawprint.png",
+      "repository_path": null,
+      "known_dimensions_px": null,
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [],
+      "possible_role": "title-character-interior-candidate",
+      "requires_rebuild_if_retained": null
+    },
+    {
+      "id": "princess-puppy-magical-pawprint",
+      "original_filename": "Princess Puppy’s Magical Pawprint.png",
+      "repository_path": null,
+      "known_dimensions_px": null,
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [],
+      "possible_role": "title-character-interior-candidate",
+      "requires_rebuild_if_retained": null
+    },
+    {
+      "id": "leia-princess-puppy-character",
+      "original_filename": "Leia the Princess Puppy.png",
+      "repository_path": null,
+      "known_dimensions_px": null,
+      "classification": "candidate",
+      "binary_state": "missing",
+      "scene_affinity": [],
+      "possible_role": "character-title-reference",
+      "requires_rebuild_if_retained": null
+    }
+  ]
+}
