@@ -1,0 +1,27 @@
+name: Validate publishing repository
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+    paths:
+      - "AGENTS.md"
+      - "series/**"
+      - "books/**"
+      - "schemas/**"
+      - "scripts/**"
+      - ".github/workflows/validate-repo.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Validate manifests and Book 1 invariants
+        run: python scripts/validate_repo.py

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "slug": "princess-puppy-adventures",
+  "name": "Princess Puppy Adventures",
+  "creators": {
+    "author": "Chelsea Nash",
+    "illustrator": "Sven Hardy Benson"
+  },
+  "active_book": "leia-magical-pawprint",
+  "brand_guide": "BRAND-GUIDE.md",
+  "character_registry": "series/characters/index.json"
+}

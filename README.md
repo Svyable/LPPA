@@ -1,52 +1,48 @@
 # Princess Puppy Adventures
 
-Commercial development workspace for **Leia the Princess Puppy: And the Magical Pawprint**, the first book in **Princess Puppy Adventures**.
+Canonical publishing monorepo for **Princess Puppy Adventures**, beginning with **Leia the Princess Puppy: And the Magical Pawprint**.
 
 **Author:** Chelsea Nash  
 **Illustrator:** Sven Hardy Benson
 
-## Book 1
+## Active book
 
-- 42-page, 8.5 × 11 inch paperback coloring book
+[Book 1 — Leia the Princess Puppy: And the Magical Pawprint](./books/leia-magical-pawprint/README.md)
+
+- 42-page 8.5 × 11 inch paperback
 - black-and-white interior on white paper
-- 19 full-page coloring scenes on odd/right pages 5–41
-- mostly blank reverse pages to reduce marker bleed-through
-- working audience: approximately ages 4–8
-- working launch price: $9.99
-- KDP free ISBN for the first edition
-- no spine text at 42 pages
+- 19 coloring scenes on odd/right pages 5–41
+- KDP free ISBN
+- working launch price $9.99
 - physical proof required before publication
 
-## Current production status
+The current 19-scene adventure has been drafted and is **ready for review**. The next production step is approval, then mapping existing artwork to keepers/gaps and locking Leia's reusable character model.
 
-The critical path is **approve and map the 19 coloring scenes from existing artwork**, then lock Leia's character model before rebuilding keeper art at print quality.
+## Monorepo map
 
-The existing project tracker currently records:
-- 42 production tasks
-- 6 complete
-- 1 in progress
-- 3 ready for review
-- 32 not started
+- [AGENTS.md](./AGENTS.md) — operating instructions for humans and agents
+- [books/index.json](./books/index.json) — machine-readable book registry
+- [books/](./books/) — independent book modules
+- [series/](./series/) — reusable series/character truth
+- [BRAND-GUIDE.md](./BRAND-GUIDE.md) — series visual/story principles
+- [ops/ARCHITECTURE.md](./ops/ARCHITECTURE.md) — scalable boundaries and SOLID design
+- [ops/ASSET-POLICY.md](./ops/ASSET-POLICY.md) — asset/provenance rules
+- [scripts/validate_repo.py](./scripts/validate_repo.py) — zero-dependency structural validation
+- [scripts/new_book.py](./scripts/new_book.py) — future-book scaffolding
+- [docs/](./docs/) — public pre-launch website only
 
-## Repository map
+## Canonicality
 
-- [KDP-LAUNCH-TRACKER.md](./KDP-LAUNCH-TRACKER.md) — living production status and decisions
-- [production/PAGE-MAP.md](./production/PAGE-MAP.md) — exact 42-page interior plan
-- [assets/README.md](./assets/README.md) — existing art inventory and asset standards
-- [BRAND-GUIDE.md](./BRAND-GUIDE.md) — Leia and Princess Puppy Adventures visual/story rules
-- [metadata/KDP-METADATA.md](./metadata/KDP-METADATA.md) — Amazon/KDP metadata workspace
-- [qa/KDP-QA-CHECKLIST.md](./qa/KDP-QA-CHECKLIST.md) — preflight and proof quality gate
-- [sources/KDP-SOURCES.md](./sources/KDP-SOURCES.md) — authoritative KDP reference links
-- [PROJECT-STRUCTURE.md](./PROJECT-STRUCTURE.md) — repository working rules
+Book-specific work lives under `books/<slug>/`. Root-level legacy tracker/page-map folders are compatibility entry points only and should not become parallel sources of truth.
 
-## Public website
+For Book 1, start with:
+- [book.json](./books/leia-magical-pawprint/book.json)
+- [scene plan](./books/leia-magical-pawprint/content/SCENE-PLAN.md)
+- [page map](./books/leia-magical-pawprint/production/PAGE-MAP.md)
+- [task ledger](./books/leia-magical-pawprint/tracker/TASKS.md)
+- [KDP metadata](./books/leia-magical-pawprint/metadata/KDP.md)
+- [QA gate](./books/leia-magical-pawprint/qa/CHECKLIST.md)
 
-The pre-launch marketing site lives in [docs/](./docs/) and is wired for GitHub Pages deployment.
+## Safety / approval
 
-Expected public URL: **https://svyable.github.io/LPPA/**
-
-The site intentionally says **Coming soon** and does not claim the book is available for purchase. Draft Leia artwork is not used publicly until it is approved for that purpose.
-
-## Human approval gates
-
-Do not publish the book, order a proof, spend money, buy an ISBN, change creator credits, or make irreversible external commitments without explicit human approval.
+Do not publish, order proofs, spend money, buy ISBNs, alter creator credits, or make irreversible external commitments without explicit human approval.

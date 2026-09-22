@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "slug": "leia-magical-pawprint",
+  "series_slug": "princess-puppy-adventures",
+  "series_number": 1,
+  "title": "Leia the Princess Puppy",
+  "subtitle": "And the Magical Pawprint",
+  "contributors": {
+    "author": "Chelsea Nash",
+    "illustrator": "Sven Hardy Benson"
+  },
+  "status": "production",
+  "audience": {
+    "min_age": 4,
+    "max_age": 8
+  },
+  "format": {
+    "binding": "paperback",
+    "trim_inches": [
+      8.5,
+      11
+    ],
+    "interior": "black-and-white",
+    "paper": "white",
+    "page_count": 42,
+    "bleed": false,
+    "cover_finish": "glossy",
+    "spine_text": false
+  },
+  "kdp": {
+    "isbn_strategy": "free-kdp-isbn",
+    "displayed_publisher": "Independently published",
+    "low_content": false,
+    "working_us_price": 9.99,
+    "physical_proof_required": true
+  },
+  "canonical_paths": {
+    "scenes": "content/scene-plan.json",
+    "page_map": "production/page-map.json",
+    "tracker": "tracker/TASKS.md",
+    "metadata": "metadata/KDP.md",
+    "qa": "qa/CHECKLIST.md"
+  }
+}

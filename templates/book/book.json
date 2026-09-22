@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "slug": "BOOK_SLUG",
+  "series_slug": "princess-puppy-adventures",
+  "series_number": 0,
+  "title": "BOOK_TITLE",
+  "subtitle": "BOOK_SUBTITLE",
+  "contributors": {
+    "author": "Chelsea Nash",
+    "illustrator": "Sven Hardy Benson"
+  },
+  "status": "concept",
+  "audience": {
+    "min_age": 4,
+    "max_age": 8
+  },
+  "format": {
+    "binding": "paperback",
+    "trim_inches": [
+      8.5,
+      11
+    ],
+    "interior": "black-and-white",
+    "paper": "white",
+    "page_count": 0,
+    "bleed": false,
+    "cover_finish": "glossy",
+    "spine_text": false
+  },
+  "kdp": {
+    "isbn_strategy": "undecided",
+    "displayed_publisher": "undecided",
+    "low_content": false,
+    "working_us_price": null,
+    "physical_proof_required": true
+  },
+  "canonical_paths": {
+    "scenes": "content/scene-plan.json",
+    "page_map": "production/page-map.json",
+    "tracker": "tracker/TASKS.md",
+    "metadata": "metadata/KDP.md",
+    "qa": "qa/CHECKLIST.md"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "book_slug": "leia-magical-pawprint",
+  "status": "ready-for-review",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "page": 5,
+      "title": "The Mysterious Pawprint",
+      "story_beat": "Leia spots one magical pawprint beside the palace garden gate and leans in with a curious smile.",
+      "coloring_composition": "Large Leia + one oversized pawprint + simple flowers and gate; strong opening silhouette.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-02",
+      "page": 7,
+      "title": "A Trail Through the Flowers",
+      "story_beat": "A few pawprints lead Leia through a cheerful flower garden.",
+      "coloring_composition": "Leia walking in profile; 3–4 big flowers, butterflies, spacious path.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-03",
+      "page": 9,
+      "title": "The Secret Garden Arch",
+      "story_beat": "The pawprints slip beneath a leafy arch Leia has never noticed before.",
+      "coloring_composition": "Leia beneath a simple vine arch; open path beyond; minimal background.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-04",
+      "page": 11,
+      "title": "Hello, Little Butterfly",
+      "story_beat": "Leia pauses when a butterfly lands beside the next pawprint.",
+      "coloring_composition": "Close character moment; Leia seated, butterfly near nose, one pawprint clue.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-05",
+      "page": 13,
+      "title": "Stepping-Stone Courage",
+      "story_beat": "The trail crosses a tiny brook, and Leia carefully hops across big stepping stones.",
+      "coloring_composition": "Clear stepping stones, gentle water lines, Leia mid-hop; no busy scenery.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-06",
+      "page": 15,
+      "title": "A Friend Needs Help",
+      "story_beat": "Leia finds a little bunny whose flower crown has fallen apart and stops to help.",
+      "coloring_composition": "Leia + bunny + a few large flowers; kindness beat with simple shapes.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-07",
+      "page": 17,
+      "title": "The Pawprint Under the Mushroom",
+      "story_beat": "The next clue peeks out from beneath a giant storybook mushroom.",
+      "coloring_composition": "One oversized mushroom, Leia crouching, pawprint visible; whimsical but uncluttered.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-08",
+      "page": 19,
+      "title": "Through the Twinkly Woods",
+      "story_beat": "Leia follows the trail between friendly trees where tiny stars seem to hide in the leaves.",
+      "coloring_composition": "Three simple tree trunks, star shapes, Leia centered; generous white space.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-09",
+      "page": 21,
+      "title": "The Tiny Bridge",
+      "story_beat": "A little wooden bridge carries Leia and her new bunny friend across the stream.",
+      "coloring_composition": "Side-view bridge, two characters, simple water and reeds.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-10",
+      "page": 23,
+      "title": "A Brave Little Climb",
+      "story_beat": "The pawprints climb a gentle hill, and Leia keeps going even when the path gets steep.",
+      "coloring_composition": "Leia climbing a rounded hill with pawprints ahead; clouds and one flower patch.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-11",
+      "page": 25,
+      "title": "The Wishing Well",
+      "story_beat": "At the top, Leia finds a wishing well with a pawprint on one stone.",
+      "coloring_composition": "Large well as central object, Leia beside it; open sky, minimal vines.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-12",
+      "page": 27,
+      "title": "A Crown-Shaped Key",
+      "story_beat": "Inside a little bucket, Leia discovers a key shaped like a tiny crown.",
+      "coloring_composition": "Close-up scene: Leia, bucket, large easy-to-color key; few surrounding details.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-13",
+      "page": 29,
+      "title": "The Hidden Garden Door",
+      "story_beat": "The crown key opens a small door tucked into an old garden wall.",
+      "coloring_composition": "Rounded door, simple stones, Leia turning the key; pawprint motif on door.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-14",
+      "page": 31,
+      "title": "The Room of Pawprints",
+      "story_beat": "Inside is a cozy little room decorated with pawprints, cushions, and one empty frame.",
+      "coloring_composition": "Simple interior: cushion, frame, 3 pawprint motifs; Leia looking around.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-15",
+      "page": 33,
+      "title": "The Mirror Surprise",
+      "story_beat": "Leia looks into a mirror and notices the same magical pawprint symbol beside her own paw.",
+      "coloring_composition": "Leia + large oval mirror + one pawprint symbol; simple reveal composition.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-16",
+      "page": 35,
+      "title": "Magic Grows with Kindness",
+      "story_beat": "Leia realizes the trail appeared whenever she was curious, brave, or kind.",
+      "coloring_composition": "Leia with bunny and butterfly; three large symbolic sparkles/pawprints around them.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-17",
+      "page": 37,
+      "title": "Leaving a Pawprint for a Friend",
+      "story_beat": "Leia presses one paw gently into soft garden earth, leaving a new magical clue for someone else.",
+      "coloring_composition": "Leia making a pawprint in soil; one friend watching; big clear ground shapes.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-18",
+      "page": 39,
+      "title": "Follow the Magic Home",
+      "story_beat": "Leia and her friends follow the final pawprints back toward the palace as stars begin to appear.",
+      "coloring_composition": "Rear/three-quarter walking pose; simple palace silhouette, 3–4 stars, pawprint trail.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    },
+    {
+      "id": "scene-19",
+      "page": 41,
+      "title": "Every Kind Step Leaves Magic",
+      "story_beat": "Leia sits happily at home with her friends, one little pawprint sparkling beside them.",
+      "coloring_composition": "Warm finale portrait: Leia + bunny + butterfly, crown, single pawprint motif, lots of white space.",
+      "art_status": "needs-keeper-or-redraw-mapping",
+      "approval": "review"
+    }
+  ]
+}

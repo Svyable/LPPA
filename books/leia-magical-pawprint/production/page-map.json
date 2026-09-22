@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "book_slug": "leia-magical-pawprint",
+  "page_count": 42,
+  "trim_inches": [
+    8.5,
+    11
+  ],
+  "bleed": false,
+  "pages": [
+    {
+      "page": 1,
+      "side": "right",
+      "type": "front-matter",
+      "content": "Title page — Leia the Princess Puppy / And the Magical Pawprint"
+    },
+    {
+      "page": 2,
+      "side": "left",
+      "type": "front-matter",
+      "content": "Copyright + credits"
+    },
+    {
+      "page": 3,
+      "side": "right",
+      "type": "front-matter",
+      "content": "This Coloring Book Belongs To…"
+    },
+    {
+      "page": 4,
+      "side": "left",
+      "type": "front-matter",
+      "content": "Meet Leia + coloring note"
+    },
+    {
+      "page": 5,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 1 — The Mysterious Pawprint"
+    },
+    {
+      "page": 6,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 7,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 2 — A Trail Through the Flowers"
+    },
+    {
+      "page": 8,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 9,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 3 — The Secret Garden Arch"
+    },
+    {
+      "page": 10,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 11,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 4 — Hello, Little Butterfly"
+    },
+    {
+      "page": 12,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 13,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 5 — Stepping-Stone Courage"
+    },
+    {
+      "page": 14,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 15,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 6 — A Friend Needs Help"
+    },
+    {
+      "page": 16,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 17,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 7 — The Pawprint Under the Mushroom"
+    },
+    {
+      "page": 18,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 19,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 8 — Through the Twinkly Woods"
+    },
+    {
+      "page": 20,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 21,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 9 — The Tiny Bridge"
+    },
+    {
+      "page": 22,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 23,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 10 — A Brave Little Climb"
+    },
+    {
+      "page": 24,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 25,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 11 — The Wishing Well"
+    },
+    {
+      "page": 26,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 27,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 12 — A Crown-Shaped Key"
+    },
+    {
+      "page": 28,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 29,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 13 — The Hidden Garden Door"
+    },
+    {
+      "page": 30,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 31,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 14 — The Room of Pawprints"
+    },
+    {
+      "page": 32,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 33,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 15 — The Mirror Surprise"
+    },
+    {
+      "page": 34,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 35,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 16 — Magic Grows with Kindness"
+    },
+    {
+      "page": 36,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 37,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 17 — Leaving a Pawprint for a Friend"
+    },
+    {
+      "page": 38,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 39,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 18 — Follow the Magic Home"
+    },
+    {
+      "page": 40,
+      "side": "left",
+      "type": "reverse",
+      "content": "Mostly blank reverse"
+    },
+    {
+      "page": 41,
+      "side": "right",
+      "type": "coloring",
+      "content": "Scene 19 — Every Kind Step Leaves Magic"
+    },
+    {
+      "page": 42,
+      "side": "left",
+      "type": "closing",
+      "content": "More Princess Puppy Adventures coming soon"
+    }
+  ]
+}

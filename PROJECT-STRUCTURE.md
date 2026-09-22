@@ -1,29 +1,22 @@
 # Project Structure
 
-This repository is the durable working home for **Princess Puppy Adventures** and Book 1, *Leia the Princess Puppy: And the Magical Pawprint*.
+LPPA is a self-contained publishing monorepo designed to scale to multiple Princess Puppy Adventures books without turning Book 1 into a special-case codebase.
 
-## Working folders
+Canonical architecture and rationale: [ops/ARCHITECTURE.md](./ops/ARCHITECTURE.md).
 
-- `assets/` — artwork inventory, naming rules, and eventually approved source/print assets.
-- `production/` — exact 42-page map, assembly notes, and print manifests.
-- `metadata/` — Amazon/KDP listing data and launch copy.
-- `qa/` — preflight and physical-proof quality gates.
-- `sources/` — authoritative production and KDP reference links.
-- `docs/` — public GitHub Pages site only.
-- `.github/workflows/` — repository automation and Pages deployment.
+## Rules
 
-## Source-of-truth rule
+- Reusable series/character truth belongs under `series/`.
+- Each book is an independent module under `books/<slug>/`.
+- `books/index.json` is the registry used by repository tooling.
+- Book-specific machine-readable invariants live in `book.json`, scene-plan JSON, and page-map JSON.
+- Human-readable Markdown sits beside machine-readable data for review.
+- Public marketing lives only under `docs/`.
+- Derived release exports do not replace their source artifacts.
+- Future books should be scaffolded with `scripts/new_book.py`, then deliberately filled in.
 
-The project launch tracker controls decisions, task status, page count, credits, and production sequence. Repo documents should be updated when those values change rather than creating competing plans.
+## Book 1
 
-## Asset discipline
+The canonical Book 1 module is `books/leia-magical-pawprint/`.
 
-1. Inspect existing work before generating replacements.
-2. Preserve source files.
-3. Use descriptive filenames and explicit status labels such as `candidate`, `keeper`, and `print`.
-4. Never treat a low-resolution file as print-ready merely by changing DPI metadata.
-5. Do not publish draft art to the marketing site unless it is intentionally approved for public use.
-
-## Approval gates
-
-Explicit human approval is required before publishing the book, ordering a proof, spending money, buying an ISBN, changing creator credits, or making another irreversible external commitment.
+Older root-level `KDP-LAUNCH-TRACKER.md`, `production/`, `metadata/`, `qa/`, `tracker/`, and `assets/` material predates the modular layout. Treat it as migration/compatibility documentation. New Book 1 edits belong in the canonical book module.
