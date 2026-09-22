@@ -73,6 +73,18 @@ Prepare everything needed for those actions, then surface the smallest decision 
 - When replacing an artifact, keep the replacement traceable in git history and update references.
 - End automation work by updating the active book tracker/run log and stating the single best next action.
 
+## Context-safe execution
+
+GitHub is the durable project memory; chat context is temporary. Do not require a single long conversation to carry the project state.
+
+- Work in bounded increments: one critical-path objective per run or PR.
+- Checkpoint concrete progress to GitHub before expanding into another objective.
+- Prefer targeted file reads over recursive repository dumps or repeatedly re-reading large histories.
+- After several tool calls or a substantial asset audit, commit the useful state before doing more exploration.
+- If the next critical-path step depends on image binaries that are not present in the repository or current working context, record the missing asset once and stop generating additional planning layers around it.
+- Resume a long-running project from the canonical tracker and run log in a fresh chat when needed; do not treat conversation continuity as a project dependency.
+- A context-window interruption must not invalidate completed work already committed to GitHub.
+
 ## Definition of done
 
 A Book 1 release is not done because KDP accepts the files. It is done only after the repository records: exact 42-page interior, print-quality artwork, completed QA, final wrap cover, accurate metadata, Previewer pass, physical proof approval by Chelsea and Sven, and final publication identifiers.
