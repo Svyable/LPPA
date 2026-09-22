@@ -76,7 +76,8 @@ These remain candidates until deliberately approved. See [assets/README.md](./as
 - [x] Full 42-task production ledger mirrored into repo.
 - [x] Pre-launch public website created under `docs/`.
 - [x] GitHub Pages deployment workflow added.
-- [ ] Verify live Pages deployment; repository-level Pages source may still need to be set to **GitHub Actions**.
+- [ ] **Enable GitHub Pages for this repository with Build and deployment → Source = GitHub Actions.** The first deployment run reached `actions/configure-pages` and failed because GitHub reported that no Pages site is enabled for the repository.
+- [ ] Re-run the Pages workflow and verify **https://svyable.github.io/LPPA/** after the setting is enabled.
 
 The public site deliberately says **Coming soon** and does not use unapproved draft Leia artwork.
 
@@ -95,7 +96,7 @@ The public site deliberately says **Coming soon** and does not use unapproved dr
 | Launch price | $9.99 working price — review before publish |
 | Physical proof | Required and must be approved by Chelsea and Sven |
 | GitHub workspace | `Svyable/LPPA` |
-| Pre-launch website | GitHub Pages static site from `docs/` |
+| Pre-launch website | GitHub Pages static site from `docs/`; one-time Pages enablement still required |
 
 ## Quality gate
 
