@@ -1,6 +1,6 @@
 # Book 1 Candidate Art Audit
 
-Status: **In progress**. This is the canonical A01 working document for mapping known legacy Leia artwork to the 19-scene plan. No item below is a keeper, print asset, or approved public asset until the actual binary is imported and visually reviewed.
+Status: **In progress**. This is the canonical A01 human-review document for mapping known legacy Leia artwork to the 19-scene plan. The machine-readable inventory is [`candidate-assets.json`](./candidate-assets.json). Keep the two synchronized whenever a candidate is imported, classified, or mapped. No item below is a keeper, print asset, or approved public asset until the actual binary is imported and visually reviewed.
 
 ## Known candidates
 
@@ -58,6 +58,8 @@ For every imported candidate, record before promotion:
 - print assessment: genuine source quality, not just metadata DPI;
 - decision: reject, reference-only, keeper-source, or requires redraw/rebuild;
 - public-site approval as a separate decision from keeper status.
+
+On import, set the manifest entry's `repository_path`, change `binary_state` to `imported`, record actual dimensions, and update classification/scene affinity only from visual evidence. If a legacy binary is conclusively unrecoverable, set `binary_state` to `unavailable` rather than deleting its historical record.
 
 ## A01 completion rule
 
