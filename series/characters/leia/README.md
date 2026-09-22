@@ -1,6 +1,6 @@
 # Leia — Series Character Model
 
-Status: **in development**. This file defines what must become stable before print artwork is rebuilt.
+Status: **in development**. This directory is the canonical reusable home for Leia's visual identity across Princess Puppy Adventures.
 
 Leia is the recurring protagonist across Princess Puppy Adventures, not a generic puppy reused under different costumes.
 
@@ -12,18 +12,10 @@ Leia is the recurring protagonist across Princess Puppy Adventures, not a generi
 - age-appropriate, friendly visual vocabulary;
 - princess cues should feel charming, not overloaded.
 
-## Consistency sheet still required
+## Model contract
 
-The approved visual reference must explicitly lock:
-- breed appearance;
-- face / muzzle proportions;
-- ear shape and carriage;
-- eye shape;
-- coat markings and their exact placement;
-- tail and body proportions;
-- crown design and default accessories;
-- front / side / three-quarter poses;
-- happy, curious, brave, surprised, and gentle expressions;
-- line-art simplification rules.
+[CHARACTER-MODEL-CONTRACT.md](./CHARACTER-MODEL-CONTRACT.md) defines the evidence, required views, line-art vocabulary, Book 1 stress tests, provenance, and promotion gate for A02. It is deliberately a contract rather than an invented visual specification while A01's legacy art binaries remain unavailable for inspection.
 
-Once approved, store the reusable model sheet under this directory and record provenance/version here. Book artwork should reference the approved version rather than inventing Leia anew.
+The approved visual reference must explicitly lock breed appearance; face/muzzle proportions; ear and eye design; coat markings; tail/body proportions; crown/accessories; front, side, three-quarter and rear/action views; core expressions; and line-art simplification rules.
+
+Once approved, store the reusable model sheet under this directory and record provenance/version in the contract. Book artwork should reference the approved version rather than inventing Leia anew.
