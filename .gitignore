@@ -1,0 +1,14 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Local scratch / export folders
+scratch/
+tmp/
+exports/
+
+# Never commit local credentials
+.env
+.env.*
