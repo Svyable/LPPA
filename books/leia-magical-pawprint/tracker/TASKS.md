@@ -20,7 +20,7 @@ This is the canonical Book 1 work ledger. Status values: `Not Started`, `In Prog
 | A04 | Artwork | Simplify line work for ages 4–8 | Sven | Not Started | High | A03 |
 | A05 | Artwork | Check line weight and safe margins | Sven | Not Started | High | A03 |
 | A06 | Artwork | Finalize title-page art | Sven | Ready for Review | High | D01,D02 |
-| A07 | Artwork | Finalize This Book Belongs To page | Sven | Not Started | Medium | A02 |
+| A07 | Artwork | Finalize This Book Belongs To page | Sven | In Progress | Medium | A02 |
 | P01 | Production | Assemble exact 42-page interior PDF | Sven | Not Started | Critical | C02,C03,C04,A03,A06,A07 |
 | P02 | Production | Verify coloring designs on odd/right pages | Sven | Not Started | High | P01 |
 | P03 | Production | Verify mostly blank reverses | Sven | Not Started | High | P01 |
@@ -51,4 +51,4 @@ This is the canonical Book 1 work ledger. Status values: `Not Started`, `In Prog
 
 C01 → A01 → A02 → A03 → A04/A05 → P01 → P04/P05 → K01/K02 → metadata/upload/Previewer → proof → publish.
 
-C01 remains **Ready for Review**. C02–C04 have complete draft copy in `content/FRONT-BACK-MATTER.md` and are **Ready for Review**, not complete. M01–M03 now have draft listing copy/keyword/category direction in `metadata/KDP.md` and are likewise **Ready for Review**; final listing data must be rechecked against the approved scene/art package and live KDP choices.
+C01 remains **Ready for Review**. C02–C04 have complete draft copy in `content/FRONT-BACK-MATTER.md` and are **Ready for Review**, not complete. A07 now has its page-3 copy/layout brief in `content/BELONGS-TO-PAGE.md` and is **In Progress**; its Leia vignette remains gated on A02. M01–M03 have draft listing copy/keyword/category direction in `metadata/KDP.md` and are likewise **Ready for Review**; final listing data must be rechecked against the approved scene/art package and live KDP choices.
