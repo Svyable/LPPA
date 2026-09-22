@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "books": [
+    {
+      "slug": "leia-magical-pawprint",
+      "series_number": 1,
+      "title": "Leia the Princess Puppy",
+      "subtitle": "And the Magical Pawprint",
+      "status": "production",
+      "manifest": "books/leia-magical-pawprint/book.json"
+    }
+  ]
+}

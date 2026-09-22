@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "characters": [
+    {
+      "slug": "leia",
+      "name": "Leia",
+      "role": "Princess Puppy protagonist",
+      "status": "character-model-in-development",
+      "guide": "series/characters/leia/README.md"
+    }
+  ]
+}
