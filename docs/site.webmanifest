@@ -1,0 +1,9 @@
+{
+  "name": "Princess Puppy Adventures",
+  "short_name": "Princess Puppy",
+  "start_url": "/LPPA/",
+  "display": "standalone",
+  "background_color": "#fffafc",
+  "theme_color": "#fff6fb",
+  "description": "Princess Puppy Adventures — home of Leia the Princess Puppy."
+}
