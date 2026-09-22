@@ -29,9 +29,9 @@ This is the canonical Book 1 work ledger. Status values: `Not Started`, `In Prog
 | K01 | Cover | Generate exact KDP 42-page cover template | Sven | Not Started | Critical | P01 |
 | K02 | Cover | Build full wrap cover PDF | Sven | Not Started | Critical | K01 |
 | K03 | Cover | Write/place back-cover copy | Chelsea | Not Started | High | K02 |
-| M01 | Metadata | Finalize Amazon description | Chelsea | Not Started | High | C01 |
-| M02 | Metadata | Finalize seven keyword phrases | Chelsea | Not Started | Medium | M01 |
-| M03 | Metadata | Choose accurate KDP categories | Both | Not Started | Medium | M01 |
+| M01 | Metadata | Finalize Amazon description | Chelsea | Ready for Review | High | C01 |
+| M02 | Metadata | Finalize seven keyword phrases | Chelsea | Ready for Review | Medium | M01 |
+| M03 | Metadata | Choose accurate KDP categories | Both | Ready for Review | Medium | M01 |
 | M04 | Metadata | Set series | Both | Not Started | High | D06 |
 | M05 | Metadata | Confirm reading age/audience | Chelsea | Ready for Review | Medium | C01 |
 | M06 | Metadata | Record AI-generated-content disclosure accurately | Both | Not Started | Critical | A03,K02 |
@@ -51,4 +51,4 @@ This is the canonical Book 1 work ledger. Status values: `Not Started`, `In Prog
 
 C01 → A01 → A02 → A03 → A04/A05 → P01 → P04/P05 → K01/K02 → metadata/upload/Previewer → proof → publish.
 
-C01 remains **Ready for Review**. C02–C04 now have complete draft copy in `content/FRONT-BACK-MATTER.md` and are **Ready for Review**, not complete; Chelsea-owned copy requires approval before final production.
+C01 remains **Ready for Review**. C02–C04 have complete draft copy in `content/FRONT-BACK-MATTER.md` and are **Ready for Review**, not complete. M01–M03 now have draft listing copy/keyword/category direction in `metadata/KDP.md` and are likewise **Ready for Review**; final listing data must be rechecked against the approved scene/art package and live KDP choices.
