@@ -1,13 +1,16 @@
 {
   "schema_version": 1,
   "book_slug": "leia-magical-pawprint",
-  "status": "awaiting-binary-import",
+  "status": "partially-imported-review-pending",
   "candidates": [
     {
       "id": "cover-concept",
       "original_filename": "Leia the Princess Puppy Cover.png",
       "repository_path": null,
-      "known_dimensions_px": [1448, 1086],
+      "known_dimensions_px": [
+        1448,
+        1086
+      ],
       "classification": "candidate",
       "binary_state": "missing",
       "scene_affinity": [],
@@ -18,7 +21,10 @@
       "id": "magical-pawprints-concept",
       "original_filename": "Leia the Princess Puppy: Magical Pawprints.png",
       "repository_path": null,
-      "known_dimensions_px": [1774, 887],
+      "known_dimensions_px": [
+        1774,
+        887
+      ],
       "classification": "candidate",
       "binary_state": "missing",
       "scene_affinity": [],
@@ -29,10 +35,16 @@
       "id": "braver-day-adventure",
       "original_filename": "Leia’s Braver Day Adventure.png",
       "repository_path": null,
-      "known_dimensions_px": [1208, 1302],
+      "known_dimensions_px": [
+        1208,
+        1302
+      ],
       "classification": "candidate",
       "binary_state": "missing",
-      "scene_affinity": [5, 10],
+      "scene_affinity": [
+        5,
+        10
+      ],
       "possible_role": "courage-adventure-reference",
       "requires_rebuild_if_retained": true
     },
@@ -40,7 +52,10 @@
       "id": "image-gen-4-1",
       "original_filename": "image-gen-4(1).png",
       "repository_path": null,
-      "known_dimensions_px": [1104, 1425],
+      "known_dimensions_px": [
+        1104,
+        1425
+      ],
       "classification": "candidate",
       "binary_state": "missing",
       "scene_affinity": [],
@@ -51,7 +66,10 @@
       "id": "image-gen-3-1",
       "original_filename": "image-gen-3(1).png",
       "repository_path": null,
-      "known_dimensions_px": [1104, 1425],
+      "known_dimensions_px": [
+        1104,
+        1425
+      ],
       "classification": "candidate",
       "binary_state": "missing",
       "scene_affinity": [],
@@ -61,35 +79,90 @@
     {
       "id": "leia-magical-pawprint-apostrophe",
       "original_filename": "Leia the Princess Puppy’s Magical Pawprint.png",
-      "repository_path": null,
-      "known_dimensions_px": null,
+      "repository_path": "candidates/Leia the Princess Puppy’s Magical Pawprint.png",
+      "known_dimensions_px": [
+        1103,
+        1426
+      ],
       "classification": "candidate",
-      "binary_state": "missing",
+      "binary_state": "imported",
       "scene_affinity": [],
       "possible_role": "title-character-interior-candidate",
-      "requires_rebuild_if_retained": null
+      "requires_rebuild_if_retained": null,
+      "source_provenance": {
+        "source": "project-library original mirrored in Google Drive LPPA-temp asset",
+        "drive_file_id": "1VQvWt1jocuJMB4mcEkL8h_AWaiJWCMsN",
+        "sha256": "014029e417de3217670c4e1dbf4f0128ed8ad76e3d0bf271a0b9ab3f56793da8",
+        "git_blob_sha": "3770294f3721d5cefb3cf49ffd958f4de64a4d56",
+        "import_date": "2026-10-07"
+      },
+      "review_note": "Color/line-art split composition with title lettering; use as cover concept only after checking Leia's appearance and title typography."
     },
     {
       "id": "princess-puppy-magical-pawprint",
       "original_filename": "Princess Puppy’s Magical Pawprint.png",
-      "repository_path": null,
-      "known_dimensions_px": null,
+      "repository_path": "candidates/Princess Puppy’s Magical Pawprint.png",
+      "known_dimensions_px": [
+        1208,
+        1302
+      ],
       "classification": "candidate",
-      "binary_state": "missing",
+      "binary_state": "imported",
       "scene_affinity": [],
       "possible_role": "title-character-interior-candidate",
-      "requires_rebuild_if_retained": null
+      "requires_rebuild_if_retained": null,
+      "source_provenance": {
+        "source": "project-library original mirrored in Google Drive LPPA-temp asset",
+        "drive_file_id": "1S2usASF1MnBTfThg7gq67M0pfm1atyI6",
+        "sha256": "36fefefb2950088c0e0d4320d567ee9c173ae2e07a2e4202f06cab3c2d05e5cc",
+        "git_blob_sha": "59da2fd58882dd086fa5c1e1b531186735c88c63",
+        "import_date": "2026-10-07"
+      },
+      "review_note": "Close alternate of the colorful split cover concept, with different layout/aspect ratio; not print approved."
     },
     {
       "id": "leia-princess-puppy-character",
       "original_filename": "Leia the Princess Puppy.png",
-      "repository_path": null,
-      "known_dimensions_px": null,
+      "repository_path": "candidates/Leia the Princess Puppy.png",
+      "known_dimensions_px": [
+        1103,
+        1426
+      ],
       "classification": "candidate",
-      "binary_state": "missing",
+      "binary_state": "imported",
       "scene_affinity": [],
       "possible_role": "character-title-reference",
-      "requires_rebuild_if_retained": null
+      "requires_rebuild_if_retained": null,
+      "source_provenance": {
+        "source": "project-library original mirrored in Google Drive LPPA-temp asset",
+        "drive_file_id": "1v19sjeu_QP4ZLqdGxn6wZllWYTuqgwzq",
+        "sha256": "5d2eddee4d5ce0b1e02952062bb9b4d0db8a2c278a4f3d01f412f58b2440c40a",
+        "git_blob_sha": "c3a6e06532a9665235856c44365166929e70b74b",
+        "import_date": "2026-10-07"
+      },
+      "review_note": "Black-and-white puppy title/character candidate with crown, castle, and narrative caption; not approved as definitive Leia."
+    },
+    {
+      "id": "leias-magical-pawprint-adventure",
+      "original_filename": "Leia’s Magical Pawprint Adventure.png",
+      "repository_path": "candidates/Leia’s Magical Pawprint Adventure.png",
+      "known_dimensions_px": [
+        1103,
+        1426
+      ],
+      "classification": "candidate",
+      "binary_state": "imported",
+      "scene_affinity": [],
+      "possible_role": "narrative-storyboard-reference",
+      "requires_rebuild_if_retained": true,
+      "source_provenance": {
+        "source": "project-library original mirrored in Google Drive LPPA-temp asset",
+        "drive_file_id": "1WgvaHal9gjAAzuxm9CAnC_4KPdFiSPHn",
+        "sha256": "ce2e36fa66cd4717b365772856507a269e2dc1d6bad928256cf8ca5d53c66a6d",
+        "git_blob_sha": "94d1d878176fe610fc7f90002ae738732177d586",
+        "import_date": "2026-10-07"
+      },
+      "review_note": "Four-panel black-and-white narrative/storyboard with multiple scenes; reference, not a standalone print coloring page."
     }
   ]
 }
